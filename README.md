@@ -12,6 +12,8 @@ Welcome to the **AI in Healthcare** project repository! This project aims to ana
     - [Variables](#variables)
   - [General EMA Dataset (`general_ema.csv`)](#general-ema-dataset-general_emacsv)
     - [Variables](#variables-2)
+  - [Steps Dataset (`steps.csv`)](#steps-dataset-stepscsv)
+    - [Variables](#variables-3)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -26,6 +28,8 @@ This project utilizes three primary datasets to analyze the impact of COVID-19 a
 1. **Demographics Dataset (`demographics.csv`):** Contains demographic information of the survey participants, including gender and race.
 2. **COVID EMA Dataset (`covid_ema.csv`):** Contains survey responses related to participants' concerns, behaviors, and daily activities during the COVID-19 pandemic.
 3. **General EMA Dataset (`general_ema.csv`):** Contains additional survey responses assessing various aspects of participants' emotional states, self-esteem, stress levels, and time spent on EMAs.
+4. **Steps Dataset (`steps.csv`):** Contains data on step counts segmented by different parts of the day and by hour, capturing activity patterns throughout a full day.
+
 
 ### Demographics Dataset (`demographics.csv`)
 
@@ -124,4 +128,44 @@ Below is a detailed description of each variable in the `general_ema.csv` datase
 | `current_stress_level`      | **Current Stress Level**<br>Are you feeling stressed now?<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
 | `average_ema_time_sec`      | **Average EMA Time (sec)**<br>Average time spent on the EMA (in seconds).                                                                                                                                                                        |
 
+### Steps Dataset (`steps.csv`)
+
+The `steps.csv` file contains step count data, providing information about users' physical activity throughout the day. Steps are aggregated by parts of the day as well as hourly.
+
+#### Variables
+
+Below is a detailed description of each variable in the `steps.csv` dataset:
+
+| **Variable**        | **Description** |
+|---------------------|-----------------|
+| `id`                | **Unique User ID**<br>A unique identifier for each participant. |
+| `date`              | **Date**<br>The date of the recorded steps, in the format `YYYYMMDD`. |
+| `steps_full_day`    | **Full Day Steps**<br>Total number of steps recorded over the full day. |
+| `steps_12am_9am`    | **Early Morning Steps**<br>Number of steps taken between 12 AM and 9 AM. |
+| `steps_9am_6pm`     | **Daytime Steps**<br>Number of steps taken between 9 AM and 6 PM. |
+| `steps_6pm_12am`    | **Evening Steps**<br>Number of steps taken between 6 PM and 12 AM. |
+| `steps_hour_00`     | **Hourly Steps - 12 AM**<br>Number of steps taken between 12 AM and 1 AM. |
+| `steps_hour_01`     | **Hourly Steps - 1 AM**<br>Number of steps taken between 1 AM and 2 AM. |
+| `steps_hour_02`     | **Hourly Steps - 2 AM**<br>Number of steps taken between 2 AM and 3 AM. |
+| `steps_hour_03`     | **Hourly Steps - 3 AM**<br>Number of steps taken between 3 AM and 4 AM. |
+| `steps_hour_04`     | **Hourly Steps - 4 AM**<br>Number of steps taken between 4 AM and 5 AM. |
+| `steps_hour_05`     | **Hourly Steps - 5 AM**<br>Number of steps taken between 5 AM and 6 AM. |
+| `steps_hour_06`     | **Hourly Steps - 6 AM**<br>Number of steps taken between 6 AM and 7 AM. |
+| `steps_hour_07`     | **Hourly Steps - 7 AM**<br>Number of steps taken between 7 AM and 8 AM. |
+| `steps_hour_08`     | **Hourly Steps - 8 AM**<br>Number of steps taken between 8 AM and 9 AM. |
+| `steps_hour_09`     | **Hourly Steps - 9 AM**<br>Number of steps taken between 9 AM and 10 AM. |
+| `steps_hour_10`     | **Hourly Steps - 10 AM**<br>Number of steps taken between 10 AM and 11 AM. |
+| `steps_hour_11`     | **Hourly Steps - 11 AM**<br>Number of steps taken between 11 AM and 12 PM. |
+| `steps_hour_12`     | **Hourly Steps - 12 PM**<br>Number of steps taken between 12 PM and 1 PM. |
+| `steps_hour_13`     | **Hourly Steps - 1 PM**<br>Number of steps taken between 1 PM and 2 PM. |
+| `steps_hour_14`     | **Hourly Steps - 2 PM**<br>Number of steps taken between 2 PM and 3 PM. |
+| `steps_hour_15`     | **Hourly Steps - 3 PM**<br>Number of steps taken between 3 PM and 4 PM. |
+| `steps_hour_16`     | **Hourly Steps - 4 PM**<br>Number of steps taken between 4 PM and 5 PM. |
+| `steps_hour_17`     | **Hourly Steps - 5 PM**<br>Number of steps taken between 5 PM and 6 PM. |
+| `steps_hour_18`     | **Hourly Steps - 6 PM**<br>Number of steps taken between 6 PM and 7 PM. |
+| `steps_hour_19`     | **Hourly Steps - 7 PM**<br>Number of steps taken between 7 PM and 8 PM. |
+| `steps_hour_20`     | **Hourly Steps - 8 PM**<br>Number of steps taken between 8 PM and 9 PM. |
+| `steps_hour_21`     | **Hourly Steps - 9 PM**<br>Number of steps taken between 9 PM and 10 PM. |
+| `steps_hour_22`     | **Hourly Steps - 10 PM**<br>Number of steps taken between 10 PM and 11 PM. |
+| `steps_hour_23`     | **Hourly Steps - 11 PM**<br>Number of steps taken between 11 PM and 12 AM. |
 
