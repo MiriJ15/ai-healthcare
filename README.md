@@ -14,30 +14,31 @@ Welcome to the **AI in Healthcare** project repository! This project aims to ana
     - [Variables](#variables-2)
   - [Steps Dataset (`steps.csv`)](#steps-dataset-stepscsv)
     - [Variables](#variables-3)
+  - [Sensing Dataset (`sensing.csv`)](#sensing-dataset-sensingcsv)
+    - [Variables](#variables-4)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview
 
+This project leverages various datasets to analyze the impacts of COVID-19, daily activities, and personal routines on participants’ mental health and behavior using advanced AI techniques. Through mobile sensing and surveys, it provides insights into changes in physical activity, emotional states, and social interactions.
 
 ## Dataset Description
 
-This project utilizes three primary datasets to analyze the impact of COVID-19 and other factors on individuals' mental health and daily activities:
+This project utilizes five primary datasets to analyze the impact of COVID-19 and other factors on individuals' mental health and daily activities:
 
 1. **Demographics Dataset (`demographics.csv`):** Contains demographic information of the survey participants, including gender and race.
 2. **COVID EMA Dataset (`covid_ema.csv`):** Contains survey responses related to participants' concerns, behaviors, and daily activities during the COVID-19 pandemic.
 3. **General EMA Dataset (`general_ema.csv`):** Contains additional survey responses assessing various aspects of participants' emotional states, self-esteem, stress levels, and time spent on EMAs.
 4. **Steps Dataset (`steps.csv`):** Contains data on step counts segmented by different parts of the day and by hour, capturing activity patterns throughout a full day.
-
+5. **Sensing Dataset (`sensing.csv`):** Contains detailed sensor data on participants' phone usage, physical activities, audio data, and location information.
 
 ### Demographics Dataset (`demographics.csv`)
 
 The `demographics.csv` file contains demographic information of the survey participants. This data is crucial for understanding the diversity of the survey respondents and for performing stratified analyses.
 
 #### Variables
-
-Below is a detailed description of each variable in the `demographics.csv` dataset:
 
 | **Variable** | **Description**                                                                                                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,8 +51,6 @@ Below is a detailed description of each variable in the `demographics.csv` datas
 The `covid_ema.csv` file consists of survey responses collected to assess the impact of COVID-19 on individuals' concerns, behaviors, and daily activities. Each row in the dataset represents a unique user's responses on a specific date.
 
 #### Variables
-
-Below is a detailed description of each variable in the `covid_ema.csv` dataset:
 
 | **Variable**                | **Description**                                                                                                                                                                                                                                      |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,38 +72,6 @@ Below is a detailed description of each variable in the `covid_ema.csv` dataset:
 The `general_ema.csv` file contains survey responses assessing various aspects of participants' emotional states, self-esteem, stress levels, and time spent on Ecological Momentary Assessments (EMAs). Each row represents a unique user's responses on a specific date.
 
 #### Variables
-
-Below is a detailed description of each variable in the `general_ema.csv` dataset:
-
-| **Variable**                | **Description**                                                                                                                                                                                                                                      |
-|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `id`                        | **Unique User ID**<br>A unique identifier assigned to each participant in the survey.                                                                                                                                                              |
-| `date`                      | **Date**<br>Date of the survey response in the format `YYYYMMDD`. Example: `20240430` represents April 30, 2024.                                                                                                                                    |
-| `photographic_affect_meter_score` | **Photographic Affect Meter Score**<br>Photographic Affect Meter scores. The user chooses an image from 16 pictures. Valence and arousal are calculated based on the rubric mentioned [here](https://dl.acm.org/doi/10.1145/1978942.1979047). Range: 1 to 16 |
-| `phq4_feeling_nervous`      | **PHQ4 - Feeling Nervous**<br>Over the last 2 weeks, how often have you been bothered by feeling nervous, anxious, or on edge?<br>**Scale:**<br>0: Not at all;<br>1: Several days;<br>2: More than half the days;<br>3: Nearly every day |
-| `phq4_worry_control`        | **PHQ4 - Worry Control**<br>Over the last 2 weeks, how often have you been bothered by not being able to stop or control worrying?<br>**Scale:**<br>0: Not at all;<br>1: Several days;<br>2: More than half the days;<br>3: Nearly every day |
-| `phq4_feeling_depressed`    | **PHQ4 - Feeling Depressed**<br>Over the last 2 weeks, how often have you been bothered by feeling down, depressed, or hopeless?<br>**Scale:**<br>0: Not at all;<br>1: Several days;<br>2: More than half the days;<br>3: Nearly every day |
-| `phq4_little_interest`      | **PHQ4 - Little Interest**<br>Over the last 2 weeks, how often have you been bothered by having little interest or pleasure in doing things?<br>**Scale:**<br>0: Not at all;<br>1: Several days;<br>2: More than half the days;<br>3: Nearly every day |
-| `phq4_response_time_mean_sec` | **PHQ4 - Mean Response Time (sec)**<br>Mean time spent on PHQ4 EMAs (in seconds).                                                                                                                                                                |
-| `phq4_response_time_median_sec` | **PHQ4 - Median Response Time (sec)**<br>Median time spent on PHQ4 EMAs (in seconds).                                                                                                                                                            |
-| `phq4_total_score`          | **PHQ4 Total Score**<br>Aggregated PHQ4 Score (Sum of `phq4_feeling_nervous` to `phq4_little_interest`).                                                                                                                                       |
-| `social_interaction_level`  | **Social Interaction Level**<br>Have you spent most of your time alone or with others today?<br>**Scale:**<br>1: Almost always alone;<br>2: Mostly alone, a little time with others;<br>3: Equal amounts of time alone and with others;<br>4: Mostly with others, a little time alone;<br>5: Almost always with others |
-| `sse3_worry_about_others_think` | **SSE3 - Worry About Others' Thoughts**<br>Right now, I worry about what other people think of me.<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
-| `sse3_pleased_with_appearance` | **SSE3 - Pleased with Appearance**<br>Right now, I am pleased with my appearance.<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
-| `sse3_feel_as_smart_as_others` | **SSE3 - Feel as Smart as Others**<br>Right now, I feel as smart as others.<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
-| `sse3_overall_self_feelings` | **SSE3 - Overall Self Feelings**<br>Right now, overall, I feel good about myself.<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
-| `sse3_response_time_mean_sec` | **SSE3 - Mean Response Time (sec)**<br>Mean time spent on self-esteem EMAs (in seconds).                                                                                                                                                    |
-| `sse3_response_time_median_sec` | **SSE3 - Median Response Time (sec)**<br>Median time spent on self-esteem EMAs (in seconds).                                                                                                                                              |
-| `current_stress_level`      | **Current Stress Level**<br>Are you feeling stressed now?<br>**Scale:**<br>1: Not at All;<br>2: A Little Bit;<br>3: Somewhat;<br>4: Very Much;<br>5: Extremely |
-| `average_ema_time_sec`      | **Average EMA Time (sec)**<br>Average time spent on the EMA (in seconds).                                                                                                                                                                        |
-
-### General EMA Dataset (`general_ema.csv`)
-
-The `general_ema.csv` file contains survey responses assessing various aspects of participants' emotional states, self-esteem, stress levels, and time spent on Ecological Momentary Assessments (EMAs). Each row represents a unique user's responses on a specific date.
-
-#### Variables
-
-Below is a detailed description of each variable in the `general_ema.csv` dataset:
 
 | **Variable**                | **Description**                                                                                                                                                                                                                                      |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -133,8 +100,6 @@ Below is a detailed description of each variable in the `general_ema.csv` datase
 The `steps.csv` file contains step count data, providing information about users' physical activity throughout the day. Steps are aggregated by parts of the day as well as hourly.
 
 #### Variables
-
-Below is a detailed description of each variable in the `steps.csv` dataset:
 
 | **Variable**        | **Description** |
 |---------------------|-----------------|
@@ -168,4 +133,103 @@ Below is a detailed description of each variable in the `steps.csv` dataset:
 | `steps_hour_21`     | **Hourly Steps - 9 PM**<br>Number of steps taken between 9 PM and 10 PM. |
 | `steps_hour_22`     | **Hourly Steps - 10 PM**<br>Number of steps taken between 10 PM and 11 PM. |
 | `steps_hour_23`     | **Hourly Steps - 11 PM**<br>Number of steps taken between 11 PM and 12 AM. |
+
+### Sensing Dataset (`sensing.csv`)
+
+The `sensing.csv` file contains sensor data collected from mobile devices, capturing various aspects of participants' physical activities, phone usage, audio data, and location metrics throughout the day. This dataset provides insights into daily routines, movement patterns, and environment-related variables.
+
+#### Variables
+
+| **Variable**                 | **Description**                                                                                                                                                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `id`                         | **Unique User ID**<br>A unique identifier for each participant.                                                                                                                                                                                     |
+| `date`                       | **Date**<br>The date on which the sensor data was recorded, in the format `YYYYMMDD`.                                                                                                                                                               |
+| `device_type`                | **Device Type**<br>Boolean indicating whether the participant is using an iOS device (`1`) or an Android device (`0`).                                                                                                                             |
+
+##### Activity Durations (per Day, Morning, Afternoon, Evening, and Hourly)
+
+These variables represent the total time (in seconds) spent in specific activities, segmented by day, different times of day (morning, afternoon, evening), and hourly.
+
+| **Variable**                 | **Description**                                                                                                                                                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `vehicle_time_*`             | **Vehicle Activity Time**<br>Total time spent in a vehicle, segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*` (hourly, where `*` is 0–23).                                                                                          |
+| `bike_time_*`                | **Bike Activity Time**<br>Total time spent biking, segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*` (hourly).                                                                                                                      |
+| `foot_time_*`                | **Foot Activity Time**<br>Total time spent walking or moving on foot, segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*` (hourly).                                                                                                   |
+| `running_time_*`             | **Running Activity Time**<br>Total time spent running, segmented similarly.                                                                                                                                                                        |
+| `still_time_*`               | **Still Activity Time**<br>Total time spent stationary, segmented similarly.                                                                                                                                                                       |
+| `walking_time_*`             | **Walking Activity Time**<br>Total time spent walking, segmented similarly.                                                                                                                                                                        |
+| `tilting_time_*`             | **Tilting Activity Time**<br>Total time spent in tilting activity (Android only), segmented similarly.                                                                                                                                             |
+| `unknown_activity_time_*`    | **Unknown Activity Time**<br>Total time spent in unknown activities, segmented similarly.                                                                                                                                                          |
+
+##### Audio Data (per Day, Morning, Afternoon, Evening, and Hourly)
+
+These variables capture audio data, including mean and standard deviation of audio amplitude, conversation duration, and voice ratio, segmented by day, different times of day, and hourly.
+
+| **Variable**                 | **Description**                                                                                                                                                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `audio_amp_avg_*`            | **Average Audio Amplitude**<br>Average audio amplitude detected, segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*`.                                                                                                                 |
+| `audio_amp_std_*`            | **Audio Amplitude Standard Deviation**<br>Standard deviation of audio amplitude, segmented similarly.                                                                                                                                              |
+| `audio_convo_duration_*`     | **Conversation Duration**<br>Total duration of detected conversations, segmented similarly.                                                                                                                                                        |
+| `audio_convo_count_*`        | **Conversation Count**<br>Number of detected conversations, segmented similarly.                                                                                                                                                                  |
+| `audio_voice_ratio_*`        | **Voice Ratio**<br>Ratio of voice detection to total audio inferences, segmented similarly.                                                                                                                                                        |
+
+##### Location and Distance Data (per Day, Morning, Afternoon, Evening, and Hourly)
+
+These variables represent distance and location data, including total distance traveled, maximum distance from campus, and number of locations visited, segmented by day, times of day, and hourly.
+
+| **Variable**                 | **Description**                                                                                                                                                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `location_travel_distance_*` | **Total Distance Traveled**<br>Total distance traveled, segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*` (hourly).                                                                                                                |
+| `location_max_dist_from_campus_*` | **Maximum Distance from Campus**<br>Maximum distance traveled away from a designated campus location, segmented similarly.                                                                                                                   |
+| `location_visits_*`          | **Location Visits**<br>Number of locations visited, segmented similarly.                                                                                                                                                                          |
+
+##### Phone Unlock Data (per Day, Morning, Afternoon, Evening, and Hourly)
+
+These variables capture data on phone usage, including the total duration the phone was unlocked and the number of times the phone was unlocked, segmented by day, different times of day, and hourly.
+
+| **Variable**                 | **Description**                                                                                                                                                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `unlock_duration_*`          | **Unlock Duration**<br>Total duration the phone was unlocked (total usage time), segmented by `day`, `morning`, `afternoon`, `evening`, and `hr*`.                                                                                                |
+| `unlock_count_*`             | **Unlock Count**<br>Number of times the phone was unlocked, segmented similarly.                                                                                                                                                                  |
+
+##### Context-Based Variables
+
+These variables capture data specific to certain contexts or locations, such as food locations, home, social locations, and study locations.
+
+| **Variable**                       | **Description**                                                                                                                                                                                                                                |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `food_location_audio_amp`          | **Food Location Audio Amplitude**<br>Mean audio amplitude detected at food locations.                                                                                                                                                        |
+| `food_location_voice_ratio`        | **Food Location Voice Ratio**<br>Ratio of voice detection in audio at food locations.                                                                                                                                                        |
+| `food_location_convo_duration`     | **Food Location Conversation Duration**<br>Average duration of conversations detected at food locations, in minutes per hour.                                                                                                               |
+| `food_location_convo_count`        | **Food Location Conversation Count**<br>Number of conversations detected at food locations.                                                                                                                                                 |
+| `food_location_time_spent`         | **Food Location Time Spent**<br>Total time spent at food locations, in hours.                                                                                                                                                               |
+| `food_location_still_time`         | **Food Location Still Time**<br>Average time spent stationary at food locations, in minutes per hour.                                                                                                                                       |
+| `food_location_unlock_dur`         | **Food Location Unlock Duration**<br>Average time phone was unlocked at food locations, in minutes per hour.                                                                                                                                |
+| `food_location_unlock_count`       | **Food Location Unlock Count**<br>Average number of times the phone was unlocked at food locations.                                                                                                                                        |
+| `home_audio_amp`                   | **Home Audio Amplitude**<br>Mean audio amplitude detected at home.                                                                                                                                                                          |
+| `home_voice_ratio`                 | **Home Voice Ratio**<br>Ratio of voice detection in audio at home.                                                                                                                                                                          |
+| `home_convo_duration`              | **Home Conversation Duration**<br>Average duration of conversations at home.                                                                                                                                                                |
+| `home_convo_count`                 | **Home Conversation Count**<br>Number of conversations detected at home.                                                                                                                                                                    |
+| `home_time_spent`                  | **Home Time Spent**<br>Total time spent at home, in hours.                                                                                                                                                                                  |
+| `home_still_time`                  | **Home Still Time**<br>Average time spent stationary at home.                                                                                                                                                                               |
+| `home_unlock_dur`                  | **Home Unlock Duration**<br>Average time phone was unlocked at home.                                                                                                                                                                        |
+| `home_unlock_count`                | **Home Unlock Count**<br>Average number of times the phone was unlocked at home.                                                                                                                                                           |
+| `social_location_audio_amp`        | **Social Location Audio Amplitude**<br>Mean audio amplitude detected in social settings.                                                                                                                                                    |
+| `social_location_voice_ratio`      | **Social Location Voice Ratio**<br>Ratio of voice detection in audio at social locations.                                                                                                                                                   |
+| `social_location_convo_duration`   | **Social Location Conversation Duration**<br>Duration of conversations detected at social locations.                                                                                                                                        |
+| `social_location_convo_count`      | **Social Location Conversation Count**<br>Number of conversations detected at social locations.                                                                                                                                             |
+| `social_location_time_spent`       | **Social Location Time Spent**<br>Total time spent at social locations.                                                                                                                                                                     |
+| `social_location_still_time`       | **Social Location Still Time**<br>Time spent stationary at social locations.                                                                                                                                                                |
+| `social_location_unlock_dur`       | **Social Location Unlock Duration**<br>Time phone was unlocked at social locations.                                                                                                                                                         |
+| `social_location_unlock_count`     | **Social Location Unlock Count**<br>Number of times the phone was unlocked at social locations.                                                                                                                                            |
+| `study_location_audio_amp`         | **Study Location Audio Amplitude**<br>Mean audio amplitude detected in study settings.                                                                                                                                                      |
+| `study_location_voice_ratio`       | **Study Location Voice Ratio**<br>Ratio of voice detection in audio at study locations.                                                                                                                                                     |
+| `study_location_convo_duration`    | **Study Location Conversation Duration**<br>Duration of conversations detected at study locations.                                                                                                                                          |
+| `study_location_convo_count`       | **Study Location Conversation Count**<br>Number of conversations detected at study locations.                                                                                                                                               |
+| `study_location_time_spent`        | **Study Location Time Spent**<br>Total time spent at study locations.                                                                                                                                                                       |
+| `study_location_still_time`        | **Study Location Still Time**<br>Time spent stationary at study locations.                                                                                                                                                                  |
+| `study_location_unlock_dur`        | **Study Location Unlock Duration**<br>Time phone was unlocked at study locations.                                                                                                                                                           |
+| `study_location_unlock_count`      | **Study Location Unlock Count**<br>Number of times the phone was unlocked at study locations.                                                                                                                                              |
+
+Each of these variables provides granular insights into participants’ daily routines and activity patterns, segmented by location, specific times of day, and hours. This allows for a comprehensive analysis of behavior and environment-related metrics.
 
