@@ -1,0 +1,91 @@
+covid_overall_concern: 
+Overall Concern about COVID-19
+Measures how concerned the participant is about COVID-19.
+Scale:
+1: Not at All
+7: Extremely
+
+covid_activity_impact:
+Impact on Daily Activities
+Assesses how much the COVID-19 situation has impacted the participant's day-to-day activities in the last week.
+Scale:
+1: Not at All
+7: Very much
+
+covid_behavior_change:
+Behavioral Changes Due to COVID-19
+Evaluates the extent to which the participant has changed their behaviors in response to COVID-19 in the last week.
+Scale:
+1: Not at All
+7: Very much
+
+covid_concern_self:
+Concern for Self Regarding COVID-19
+Measures how concerned the participant is for themselves regarding COVID-19.
+Scale:
+1: Not at All
+7: Extremely
+
+covid_concern_classmates:
+Concern for Classmates Regarding COVID-19
+Assesses how concerned the participant is for their classmates regarding COVID-19.
+Scale:
+1: Not at All
+7: Extremely
+
+covid_concern_family:
+Concern for Family Regarding COVID-19
+Evaluates how concerned the participant is for their family regarding COVID-19.
+Scale:
+1: Not at All
+7: Extremely
+
+covid_concern_supplies:
+Concern about Obtaining Supplies
+Measures how concerned the participant is about obtaining food, supplies, etc., during COVID-19.
+Scale:
+1: Not at All
+7: Extremely
+
+feeling_supported:
+Feeling of Support
+Assesses how supported the participant feels.
+Scale:
+1: Not at All
+7: Extremely
+
+social_media_usage_change:
+Change in Social Media Usage
+Evaluates whether the participant's social media usage has increased or decreased compared to normal.
+Scale:
+1: Much less than normal
+4: Normal
+7: Much more than normal
+
+phq4_total_score:
+PHQ4 Total Score
+Aggregated PHQ4 Score (Sum of phq4_feeling_nervous to phq4_little_interest).
+Scale:
+0:  Not at all;
+12: Nearly every day
+
+current_stress_level:
+Current Stress Level
+Are you feeling stressed now?
+Scale:
+1: Not at All;
+2: A Little Bit;
+3: Somewhat;
+4: Very Much;
+5: Extremely
+
+sleep_duration_hours:
+Sleed duration 
+Calculated via Algorithm and measured in hours 
+
+sleep_heathkit_dur:
+Sleep Duration based on IOS health
+
+steps_full_day:
+Full Day Steps
+Total number of steps recorded over the full day.
