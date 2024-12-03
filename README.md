@@ -8,6 +8,7 @@ Welcome to the **AI in Healthcare** project repository! This project aims to ana
 - [Dataset Description](#dataset-description)
   - [Merged Dataset (`merged_dataset.csv`)](#merged-dataset-merged_datasetcsv)
     - [Variables](#variables)
+- [Results](#results)
 - [Data Source and Citation](#data-source-and-citation)
 
 ## Project Overview
@@ -49,6 +50,19 @@ The `merged_dataset.csv` file combines data from various sources, including surv
 | `sleep_duration_hours`      | **Sleep Duration (Hours)**<br>Total sleep duration in hours, as reported by the participant through surveys.                                                                                                                                |
 | `sleep_heathkit_dur`        | **Sleep Duration from HealthKit (Hours)**<br>Total sleep duration in hours, as recorded by Apple HealthKit (available for iOS devices only).                                                                                                |
 | `steps_full_day`            | **Full Day Steps**<br>Total number of steps recorded over the full day.                                                                                                                                                                     |
+## Results
+![image](https://github.com/user-attachments/assets/dce13339-df82-4797-829f-a2e0d9887282)
+![image](https://github.com/user-attachments/assets/526e52fe-7486-4adf-aad6-6415dfa43f8e)
+![image](https://github.com/user-attachments/assets/ee3b7164-0aae-4785-b3c1-c16650f4a407)
+![image](https://github.com/user-attachments/assets/a8f01877-1874-4475-9dc0-8133f666ef59)
+Before COVID
+![image](https://github.com/user-attachments/assets/300bf3b1-bc0a-40f9-bc93-e2092ab251e0)
+After COVID
+![image](https://github.com/user-attachments/assets/f4cf462a-dccc-446d-896e-b5b9d8c38999)
+![image](https://github.com/user-attachments/assets/ca64eded-a2d2-4be4-8fe4-e4a9dc81279e)
+![image](https://github.com/user-attachments/assets/43006d4a-4c90-404e-b6e6-0f4598250f68)
+![image](https://github.com/user-attachments/assets/66e74183-c0f8-499f-af2e-bd2d3d914524)
+![image](https://github.com/user-attachments/assets/27a093c6-ac5b-4bf0-8e9b-8323803caff6)
 
 ## Data Source and Citation
 
