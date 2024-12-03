@@ -54,10 +54,10 @@ The `merged_dataset.csv` file combines data from various sources, including surv
 ![image](https://github.com/user-attachments/assets/dce13339-df82-4797-829f-a2e0d9887282)
 ![image](https://github.com/user-attachments/assets/526e52fe-7486-4adf-aad6-6415dfa43f8e)
 ![image](https://github.com/user-attachments/assets/ee3b7164-0aae-4785-b3c1-c16650f4a407)
-![image](https://github.com/user-attachments/assets/a8f01877-1874-4475-9dc0-8133f666ef59)
 Before COVID
-![image](https://github.com/user-attachments/assets/300bf3b1-bc0a-40f9-bc93-e2092ab251e0)
+![image](https://github.com/user-attachments/assets/a8f01877-1874-4475-9dc0-8133f666ef59)
 After COVID
+![image](https://github.com/user-attachments/assets/300bf3b1-bc0a-40f9-bc93-e2092ab251e0)
 ![image](https://github.com/user-attachments/assets/f4cf462a-dccc-446d-896e-b5b9d8c38999)
 ![image](https://github.com/user-attachments/assets/ca64eded-a2d2-4be4-8fe4-e4a9dc81279e)
 ![image](https://github.com/user-attachments/assets/43006d4a-4c90-404e-b6e6-0f4598250f68)
