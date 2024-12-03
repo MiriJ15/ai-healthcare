@@ -64,6 +64,26 @@ After COVID
 ![image](https://github.com/user-attachments/assets/66e74183-c0f8-499f-af2e-bd2d3d914524)
 ![image](https://github.com/user-attachments/assets/27a093c6-ac5b-4bf0-8e9b-8323803caff6)
 
+### Comparative Analysis of Sleep Duration Trends: Pre-COVID vs. During-COVID
+![image](https://github.com/user-attachments/assets/9ce67454-ef72-4230-87e6-46acf460a990)
+![image](https://github.com/user-attachments/assets/180f003e-a075-441b-820d-4dffc3a12707)
+
+### Comparative Analysis of Stress Level Trends: Pre-COVID vs. During-COVID
+![image](https://github.com/user-attachments/assets/39a6a1fd-d7d2-499c-ba3d-efb6178227ad)
+![image](https://github.com/user-attachments/assets/dee258ff-a34d-48a2-b50b-34c663124f1a)
+
+### Feature Importance for Pre-COVID Stress Prediction Model
+![image](https://github.com/user-attachments/assets/10841c86-1dcf-4b04-9f9b-e09e1ef6f18b)
+
+### Feature Importance for During-COVID Stress Prediction Model
+![image](https://github.com/user-attachments/assets/ad5826c7-61d8-4bdb-84dd-ec5cdcbe9390)
+
+### Feature Importance for Pre-COVID Sleep Prediction Model
+![image](https://github.com/user-attachments/assets/b3704fbb-76c2-4cc6-85ea-0327d63a1134)
+
+### Feature Importance for During-COVID Sleep Prediction Model
+![image](https://github.com/user-attachments/assets/d6a557a6-56ae-473c-9b49-83a2cf2adffe)
+
 ## Data Source and Citation
 
 The dataset used in this project was taken from the following source:
