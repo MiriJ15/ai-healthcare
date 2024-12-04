@@ -84,6 +84,53 @@ After COVID
 ### Feature Importance for During-COVID Sleep Prediction Model
 ![image](https://github.com/user-attachments/assets/d6a557a6-56ae-473c-9b49-83a2cf2adffe)
 
+### Sleep Duration Trends
+- **Pre-COVID Sleep Duration:** Average sleep duration before the pandemic was **7.42 hours**.
+- **During-COVID Sleep Duration:** During the pandemic, sleep duration increased to **7.58 hours**, a statistically significant difference (**p-value < 0.001**).
+- **Variability:** Sleep duration variability remained consistent across both periods.
+
+### Stress Level Trends
+- **Pre-COVID Stress Levels:** Average reported stress level was **2.44** (scale: 1 to 5).
+- **During-COVID Stress Levels:** Stress levels increased to **2.65**, a statistically significant rise (**p-value < 0.001**).
+- **Correlation Analysis:** During the pandemic, a stronger negative correlation between sleep duration and stress was observed (**correlation: -0.124**) compared to pre-pandemic (**correlation: -0.066**), though neither was statistically significant.
+
+### Predictive Modeling Results
+
+#### Stress Prediction
+- **Pre-COVID Model Performance:**
+  - **RMSE:** 0.4270
+  - **R²:** 22.76%
+  - **Top Feature:** Sleep duration, followed by PHQ-4 scores.
+- **During-COVID Model Performance:**
+  - **RMSE:** 0.3578
+  - **R²:** 25.57%
+  - **Top Features:** Sleep duration, PHQ-4 scores, and general COVID concerns.
+
+#### Sleep Prediction
+- **Pre-COVID Model Performance:**
+  - **RMSE:** 2.6309
+  - **R²:** 2.49%
+  - **Top Feature:** Step count was the strongest predictor, followed by PHQ-4 scores.
+- **During-COVID Model Performance:**
+  - **RMSE:** 2.5922
+  - **R²:** 3.01%
+  - **Top Features:** Step count remained the most significant factor, with stress levels and COVID-related impacts also contributing.
+
+### Feature Importance
+- **Stress Prediction Models:**
+  - **Pre-COVID:** Sleep duration and PHQ-4 scores were the dominant predictors.
+  - **During-COVID:** Sleep duration, PHQ-4 scores, and general COVID concerns were the most impactful.
+- **Sleep Prediction Models:**
+  - **Pre-COVID:** Physical activity (step count) was the strongest determinant of sleep duration.
+  - **During-COVID:** Step count and stress levels retained significance, with COVID-related disruptions emerging as additional predictors.
+
+### Summary of Insights
+- Sleep duration increased slightly during the pandemic, likely due to lifestyle adjustments such as remote learning.
+- Stress levels also rose modestly, with peaks aligning with academic stressors.
+- Predictive models emphasized the role of sleep duration in managing stress and highlighted physical activity as a consistent determinant of sleep.
+
+These results provide valuable insights into the interplay between sleep, stress, and pandemic-related disruptions, highlighting opportunities for targeted interventions.
+
 ## Data Source and Citation
 
 The dataset used in this project was taken from the following source:
